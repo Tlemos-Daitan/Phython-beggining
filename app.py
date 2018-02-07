@@ -19,13 +19,20 @@ def remover(nomes):
 
 def alterar(nomes):
     print ("Qual nome vc gostaria de alterar?")
+    nome = input()
+    if(nome in nomes):
+        print ("Digite o novo nome:")
+        nomeAux = input()
+        index = nomes.index(nome)
+        nomes[index] = nomeAux
+        
 
 
 def menu():
     nomes = []
     escolha = ''
     while(escolha != '0'):    
-        print ("Digite: 1 para cadastrar, 2 para listar, 3 para remover e 0 para terminar")
+        print ("Digite: 1 para cadastrar, 2 para listar, 3 para remover, 4 para alterar e 0 para terminar")
         escolha = input()
 
         if(escolha == '1'):
@@ -34,4 +41,6 @@ def menu():
             listar(nomes)
         if(escolha == '3'):
             remover(nomes)
+        if(escolha == '4'):
+            alterar(nomes)
 menu()
