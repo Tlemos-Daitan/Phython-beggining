@@ -1,5 +1,7 @@
-                                                        #Estudo Phyton
+                                            
+#Estudo Phyton
 
+- Variáveis
 
     >>> convite = 'Romulo Henrique'
     >>> parte1 = convite[0:4]
@@ -15,7 +17,7 @@
     
     >>> print(parte1, parte2)
 
-#Funções (No arquivo: biblioteca.py)
+- Funções (No arquivo: biblioteca.py)
 
    def gera_nome_convite():
      convite = 'Flavio Henrique Almeida'
@@ -33,4 +35,3 @@
      parte2 = convite[ posicao_inicial:posicao_final]
      print (parte1, parte2)
 
-   
