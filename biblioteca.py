@@ -21,3 +21,4 @@ def gera_nome_convite3(convite):
   parte1 = convite[0:4]
   parte2 = convite[ posicao_inicial:posicao_final]
   return parte1 + ' ' + parte2  
+
